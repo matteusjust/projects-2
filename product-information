@@ -1,0 +1,23 @@
+/* Makes a sheet of product information, imput by the user */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int item, month, day, year;
+    float price; 
+    
+    printf ("Please enter the item's number: ");
+    scanf ("%d", &item);
+    
+    printf ("Please enter the price of the item: ");
+    scanf ("%f", &price);
+    
+    printf ("Please enter the purchase date: "); 
+    scanf ("%d/%d/%d", &month, &day, &year);
+    
+    printf ("Item\tUnit\tPurchase\n\t\tPrice\tDate\n");
+    printf ("%-3d\t $ %.2f\t %-2.2d/%-2.2d/%-2d", item, price, month, day, year);
+    
+    return 0;
+}
