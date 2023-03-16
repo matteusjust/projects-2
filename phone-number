@@ -1,0 +1,14 @@
+/* Formats a cellphone number*/
+
+#include <stdio.h>
+
+int main(void)
+{
+    int first, second, third;
+    
+    printf ("Please enter a valid number ( (xxx) xxx-xxxx ): ");
+    scanf ("(%d)%d-%d", &first, &second, &third);
+    printf ("The formated version is: %d.%d.%d\n", first, second, third);
+    
+    return 0;
+}
